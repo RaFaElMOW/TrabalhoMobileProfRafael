@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txtUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="99dp"
@@ -18,10 +18,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+        app:layout_constraintTop_toBottomOf="@+id/ptbLogo" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/txtSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="98dp"
@@ -33,23 +33,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="244dp"
-        android:layout_height="244dp"
+        android:id="@+id/ptbLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_marginStart="83dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="84dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_espaco_infantil" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/swtSalvarNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="193dp"
@@ -59,10 +58,10 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSenha" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnEntrar"
         android:layout_width="215dp"
         android:layout_height="60dp"
         android:layout_marginStart="99dp"
@@ -72,10 +71,24 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        app:layout_constraintTop_toBottomOf="@+id/swtSalvarNome" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btnCadastrar"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="97dp"
+        android:text="CADASTRAR"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEsqueciSenha" />
+
+    <Button
+        android:id="@+id/btnEsqueciSenha"
         android:layout_width="215dp"
         android:layout_height="60dp"
         android:layout_marginStart="98dp"
@@ -85,6 +98,6 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
 
 </android.support.constraint.ConstraintLayout>
