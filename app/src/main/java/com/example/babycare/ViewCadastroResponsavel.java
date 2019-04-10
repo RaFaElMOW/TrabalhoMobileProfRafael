@@ -11,7 +11,7 @@ public class ViewCadastroResponsavel extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_cadastro);
+        setContentView(R.layout.activity_view_cadastro_responsavel);
 
         Button cancelar = (Button) findViewById(R.id.btnCancelar);
         Button cadastrar = (Button) findViewById(R.id.btnEfetuarCadastro);
